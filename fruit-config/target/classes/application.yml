@@ -1,0 +1,28 @@
+server:
+  port: 10014
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: fruit-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/chenshaojian/base-config-repo.git
+          username: 
+          password: 
+  # 配置管理中心将rabbitmq 与客户端进行通信 如果不能正常连接rabbitmq 程序将不停地发出如下警告
+  # Consumer raised exception,processing can restart if the connection factory supports it....
+  rabbitmq:
+    addresses: amqp://localhost:5672
+    username: 
+    password: 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10010/eureka/,http://localhost:10011/eureka/,http://localhost:10012/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    appname: fruit-config

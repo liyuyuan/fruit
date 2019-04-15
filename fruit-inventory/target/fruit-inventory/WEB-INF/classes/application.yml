@@ -1,0 +1,44 @@
+server:
+  port: 10022
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: fruit-goods
+  zipkin:
+    base-url: http://localhost:10020
+    enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/afternow?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: lyy@1551881752
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: cloud-stream
+  rabbitmq:
+    addresses: amqp://localhost:5672
+    username: lb
+    password: lb
+    connection-timeout: 5000
+logging:
+  level:
+    com.sensetime.fis.senseguard.dao: debug
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.sensetime.fis.senseguard.pojo.es
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10010/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

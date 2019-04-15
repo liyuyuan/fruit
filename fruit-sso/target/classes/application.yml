@@ -1,0 +1,17 @@
+server: 
+  port: 10021
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        name: SESSIONID
+spring: 
+  application:
+    name: fruit-sso
+  datasource:
+    url: jdbc:mysql://localhost:3306/afternow?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: lyy@1551881752
+        # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver

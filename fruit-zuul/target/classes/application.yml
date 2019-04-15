@@ -1,0 +1,27 @@
+server: 
+  port: 10018﻿
+  servlet:
+    context-path: /
+spring: 
+  application:
+    name: fruit-zuul
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:10010/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true 
+zuul:   
+  #ignored-services: microservicecloud-dept
+  prefix: /atguigu
+  ignored-services: "*"
+  routes: 
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+info:
+  app.name: atguigu-microcloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+

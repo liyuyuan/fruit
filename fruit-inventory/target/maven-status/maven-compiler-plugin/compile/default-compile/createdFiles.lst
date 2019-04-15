@@ -1,0 +1,7 @@
+afternow\cn\GoodsInventoryApplication.class
+afternow\cn\service\impl\GoodsInventoryServiceImpl.class
+afternow\cn\configuration\RestTemplateConfig.class
+afternow\cn\exception\ErrorCode.class
+afternow\cn\controller\InventoryController.class
+afternow\cn\configuration\Swagge2Config.class
+afternow\cn\service\GoodsInventoryService.class
