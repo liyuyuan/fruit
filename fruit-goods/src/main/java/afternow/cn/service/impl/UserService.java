@@ -16,6 +16,7 @@ public class UserService {
         //savo to db
     }
 
+
     public boolean hasAccess(long userId, String resource) {
         //TODO
         return true;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/fruit-beans/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-beans/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-goods/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-goods/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-inventory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-inventory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-order/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-sso/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-sso/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-turbine/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-turbine/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-uums/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-uums/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-zipkin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fruit-zuul/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fruit-eureka" />
+        <module name="fruit-order" />
+        <module name="fruit-zuul" />
+        <module name="fruit-zipkin" />
+        <module name="fruit-uums" />
+        <module name="fruit-config" />
+        <module name="fruit-inventory" />
+        <module name="fruit-turbine" />
+        <module name="fruit-beans" />
+        <module name="fruit-sso" />
+        <module name="fruit-goods" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fruit-beans" options="-verbose -bootclasspath C:/Users/15518/.jdks/corretto-1.8.0_322/jre/lib/rt.jar;C:/Users/15518/.jdks/corretto-1.8.0_322/jre/lib/jce.jar" />
+    </option>
+  </component>
+</project>
