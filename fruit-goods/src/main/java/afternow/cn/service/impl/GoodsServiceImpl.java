@@ -1,10 +1,13 @@
 package afternow.cn.service.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
+import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Comparators;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -95,4 +98,39 @@ public class GoodsServiceImpl implements GoodsService {
 		return new OrderInfo();
 	}
 
+
+	public static void main(String[] args) {
+		int[] arr = {2,2,3,3,3,5};
+		HashMap<Integer,Integer> map = Maps.newHashMapWithExpectedSize(10);
+
+		for(int i = 0;i<arr.length;i++){
+			Integer value = map.get(arr[i]);
+			if (value!=null){
+				map.put(arr[i],value+1);
+			}else {
+				map.put(arr[i],value);
+			}
+
+		}
+
+		int k = 2;
+
+		Stream<Map.Entry<Integer, Integer>> sorted = map.entrySet().stream().sorted(Comparator.comparing(Map.Entry::getValue));
+
+		int num = 0;
+		List<Integer> result = Lists.newArrayList();
+		sorted.forEach(integerIntegerEntry -> {
+			Integer key = integerIntegerEntry.getKey();
+			Integer value = integerIntegerEntry.getValue();
+
+			if (result.size()>k){
+				return;
+			}
+
+			result.add(key);
+
+		});
+
+		System.out.println(JSON.toJSONString(result));
+	}
 }

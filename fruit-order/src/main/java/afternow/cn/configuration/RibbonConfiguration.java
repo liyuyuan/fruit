@@ -12,8 +12,8 @@ import com.netflix.loadbalancer.RandomRule;
  * @author liyuyuan_vendor
  *
  */
-@Configuration
-@RibbonClient(name = "fruit-goods", configuration = RibbonConfiguration.class)
+//@Configuration
+//@RibbonClient(name = "fruit-goods", configuration = RibbonConfiguration.class)
 public class RibbonConfiguration {
 	@Bean
 	public IRule ribbonRule() {

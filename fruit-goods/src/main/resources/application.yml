@@ -43,3 +43,5 @@ management:
     web:
       exposure:
         include: "*"
+
+access-file-path=classpath: access.json

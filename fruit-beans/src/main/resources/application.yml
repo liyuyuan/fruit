@@ -22,5 +22,4 @@ mybatis:
   type-aliases-package: afternow.cn.entity
 logging:
   level:
-    afternow.cn.mapper: debug
-
+    afternow.cn.mapper: debug
